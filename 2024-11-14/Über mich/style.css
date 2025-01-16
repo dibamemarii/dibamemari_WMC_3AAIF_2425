@@ -1,0 +1,87 @@
+/* Allgemeine Einstellungen */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background-color: #f5f0f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #8b4caf;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Profilbereich */
+.profil-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profilbild {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 5px solid #8b4caf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.profil-container p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #8b4caf;
+}
+
+/* Sektionen */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline */
+.timeline {
+    border-left: 4px solid #8b4caf;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item h3 {
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    background-color: #8b4caf;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
