@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Trainingsplan</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <h1>Dein Fitness Trainingsplan</h1>
+        <nav>
+            <a href="#start">Start</a>
+            <a href="#Workout">Workout</a>
+            <a href="#about">Warum Fitness?</a>
+            <a href="#Kostenloser Trainingsplan">Kostenloser Trainingsplan</a>
+        </nav>
+    </header>
+
+    <section id="start">
+        <h2>Willkommen!</h2>
+        <p>
+            Willkommen zu unserer Webseite! Hier kannst du kostenlos deinen eigenen Trainingsplan erstellen lassen, indem du deine Infos (Gewicht, Alter, Größe und Geschlecht) eingibst. Du erhältst einen ausführlichen Trainingsplan, der zeigt, wie viele Tage in der Woche du trainieren solltest, welche Übungen du durchführen musst, und wie viele Sätze und Wiederholungen du machen solltest. 
+        </p>
+        <p>
+            Außerdem bekommst du Videos und GIFs, die dir zeigen, wie du die Übungen korrekt ausführst. Es ist nicht nur das... die Überraschung kommt jetzt: Du kannst jederzeit unsere Trainer kontaktieren, falls du Fragen zu deinem Trainingsplan hast. Eine einfache E-Mail reicht aus!
+        </p>
+    </section>
+
+    <section id="Workout">
+        <h2>Beispiel: Ganzkörper-Training für Anfänger</h2>
+        <p>
+            Hier hast du ein Ganzkörper-Training für Anfänger als Beispiel, damit du eine Idee bekommst, wie dein eigener Trainingsplan aussehen könnte:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Übung</th>
+                    <th>Sätze</th>
+                    <th>Wiederholungen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kniebeugen</td>
+                    <td>3</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Liegestütze</td>
+                    <td>3</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Bankdrücken</td>
+                    <td>3</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Klimmzüge</td>
+                    <td>3</td>
+                    <td>6-8</td>
+                </tr>
+                <tr>
+                    <td>Plank</td>
+                    <td>3</td>
+                    <td>30 Sekunden</td>
+                </tr>
+                <tr>
+                    <td>Ausfallschritte</td>
+                    <td>3</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Seitheben</td>
+                    <td>3</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="about">
+        <h2>Warum Fitness?</h2>
+        <p>
+            Sport spielt in deinem Leben keine besonders große Rolle, und du hältst ihn auch nicht für sehr wichtig? Weit gefehlt! Bewegung ist ein unverzichtbarer Bestandteil eines gesunden Lebensstils, denn er beugt verschiedenen Krankheiten vor und sorgt dafür, dass wir uns in unserer Haut rundherum wohlfühlen. Einen Überblick über weitere Gründe, warum Fitness so wichtig ist, erhältst du hier.
+        </p>
+        <h3>Gesund bleiben: Sport hilft dir dabei!</h3>
+        <p>
+            Regelmäßiger Sport wirkt sich in vielerlei Hinsicht positiv auf deine Gesundheit aus. Bewegung stärkt das Herz-Kreislauf-System und gewährleistet, dass deine Blutgefäße elastisch bleiben. Dadurch verringert sich das Risiko für Bluthochdruck. Auch dein Stoffwechsel wird angeregt, und dein Immunsystem profitiert. Sport fördert außerdem die Durchblutung, sogar die deines Gehirns, und verbessert so deine Lernfähigkeit.
+        </p>
+        <h3>Sport für das seelische Gleichgewicht</h3>
+        <p>
+            Sport ist nicht nur gut für den Körper, sondern auch für die Psyche. Er baut Stress ab, setzt Glückshormone frei und hilft sogar bei Depressionen und Angststörungen. Experten empfehlen, sich drei- bis viermal pro Woche für mindestens 30 Minuten zu bewegen.
+        </p>
+        <h3>Toll aussehen - dank regelmäßiger Bewegung</h3>
+        <p>
+            Sport hilft dir, überschüssige Pfunde loszuwerden und Muskeln aufzubauen. Dein Teint wird sich verbessern, da die Durchblutung deiner Haut gefördert wird. Starte jetzt mit Fitness und fühle dich in deinem Körper wohl!
+        </p>
+    </section>
+
+    <section id="Kostenloser Trainingsplan">
+        <h2>Kostenloser Trainingsplan</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Dein Name" required>
+            
+            <label for="alter">Alter:</label>
+            <input type="number" id="alter" name="alter" placeholder="Dein Alter" min="10" max="99" required>
+            
+            <label for="gewicht">Gewicht (in kg):</label>
+            <input type="number" id="gewicht" name="gewicht" placeholder="z. B. 70" min="30" max="200" required>
+            
+            <label for="größe">Größe (in cm):</label>
+            <input type="number" id="größe" name="größe" placeholder="z. B. 175" min="100" max="250" required>
+            
+            <label for="geschlecht">Geschlecht:</label>
+            <select id="geschlecht" name="geschlecht" required>
+                <option value="männlich">Männlich</option>
+                <option value="weiblich">Weiblich</option>
+                <option value="divers">Divers</option>
+            </select>
+            
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Fitness Website | Kontakt: <a href="mailto:dibamemari20@gmail.com">dibamemari20@gmail.com</a></p>
+        <p>
+            Folge uns: 
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </p>
+    </footer>
+</body>
+</html>
