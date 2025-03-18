@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+</head>
+<body>
+    <h1>User Information</h1>
+    <button onclick="fetchData()">Daten abrufen</button>
+    <br><br>
+    <textarea id="output" rows="10" cols="50" readonly></textarea>
+
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('/user');
+                const data = await response.json();
+                document.getElementById('output').value = JSON.stringify(data, null, 2);
+            } catch (error) {
+                console.error("Fehler beim Abrufen:", error);
+            }
+        }
+    </script>
+</body>
+</html>
